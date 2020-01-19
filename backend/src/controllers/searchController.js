@@ -5,9 +5,9 @@ const index  = async (req,res)=>{
 	 const {techs,latitude,longitude} = req.query
 	 const techsArray = toArray(techs,',')
 	 const devs = await devSchema.find({
-		 techs :{
-			$in:techsArray
-		 } ,
+		 techs: {
+			$in: techsArray
+		 },
 		 location:{
 			 $near:{
 				 $geometry:{
@@ -19,7 +19,7 @@ const index  = async (req,res)=>{
 		 }
 	 })
 	 console.log(devs)
-	return res.json({ok:devs})
+	return res.json({devs})
 }
 
 module.exports = {index}
