@@ -1,0 +1,28 @@
+li.dev-item{
+	background: #fff;
+	box-shadow:  0 0 14px 0 rgba(0, 0, 0, 0.137);
+	border-radius: 5px;
+	padding: 30px 20px;
+}
+
+li.dev-item{
+	font-size: 16px;
+	transition: background,box-shadow 0.8s;
+}
+li.dev-item:hover{
+	box-shadow:  0 0 14px 0 rgba(0, 0, 0, 0.397);
+;	background: #f3f3f3;
+}
+li.dev-item header {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+li.dev-item header img{
+	width: 70px;
+	height: 70px;
+	border-radius: 50%;
+}
+li.dev-item header .user-info{
+	margin-left: 10px;
+}
