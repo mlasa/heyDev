@@ -14,7 +14,7 @@ function App() {
   const [devs,setDevs] = useState([]) //starts state with same type of data will be stored
 
   useEffect(()=>{
-      async function loadDevs(){
+      async function loadDevs(){//nao posso por async na frente do useEffect entao crio uma funcao dentro dele
         const response = await api.get('/devs')
         setDevs(response.data)
         console.log(response.data)
@@ -22,7 +22,7 @@ function App() {
       loadDevs()
     },[])
 
-  async function handleAddDev(data){
+  async function handleAddDev(data){ 
     const response = await api.post('/devs', data)  
     setDevs([...devs,response.data])
   }
