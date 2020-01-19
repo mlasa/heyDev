@@ -37,10 +37,10 @@ function Main({navigation}){
 		console.log({ latitude, longitude })
 
 		const response = await api.get('/search',{
-			params:{	latitude,longitude,techs:'node' }
+			params:{	latitude,longitude,techs:'angular' }
 		})
-		setDevs(response.data)
-		console.log('response',response)
+		setDevs(response.data.devs)
+		console.log('response',response.data.devs)
 	}
 
 
@@ -56,7 +56,7 @@ function Main({navigation}){
 		<>	
 			<MapView onRegionChangeComplete={handleRegionChange} initialRegion={currentRegion} style={styles.map}>
 				{devs.map(dev=>(
-					<Marker key={dev._id}coordinate={{latitude:devs.location.coordinates[1],longitude:devs.location.coordinates[0]}}>
+					<Marker key={dev._id}coordinate={{latitude:dev.location.coordinates[1],longitude:dev.location.coordinates[0]}}>
 						<Image style={styles.avatar} source={{uri:dev.avatar_url}}/>				
 						<Callout onPress={()=>{
 							navigation.navigate('Profile',{github_username:dev.github_username})
