@@ -14,7 +14,7 @@ const index  = async (req,res)=>{
 					 type:'Point',
 					 coordinates:[longitude,latitude]
 				 },
-				 $maxDistance:10000,
+				 $maxDistance:90000,
 			 }
 		 }
 	 })
