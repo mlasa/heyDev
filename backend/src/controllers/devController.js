@@ -1,6 +1,8 @@
 const axios = require('axios')
 const devSchema = require('../models/dev')
 const toArray = require ('../utils/parseStringAsArray')
+const {findConnections,sendMessage} = require ('../websocket')
+
 
 const store = async (req,res)=>{
 	const {github_username,techs,latitude,longitude} = req.body
@@ -28,6 +30,13 @@ const store = async (req,res)=>{
 		location
 	})
 
+	//Filtrar as conexoes que atendem às condicoes de distancia e tecnologias compativeis
+	const sendSocketMessageTo = findConnections(
+		{latitude,longitude},
+		techsArray,
+	)
+	sendMessage(sendSocketMessageTo,'new-dev',newDev)
+	
 	return res.json(newDev)
 }
 
