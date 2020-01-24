@@ -1,3 +1,6 @@
+
+//PORTA 8080
+
 const express = require('express')
 const mongoose = require('mongoose')
 require('dotenv/config')

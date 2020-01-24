@@ -48,13 +48,11 @@ function Main({navigation}){
 
 	async function loadDevs(){
 		const {latitude,longitude} =  currentRegion
-		console.log({ latitude, longitude })
 
 		const response = await api.get('/search',{
 			params:{	latitude,longitude,techs }
 		})
 		setDevs(response.data.devs)
-		console.log('TOMA',response.data.devs)
 		setupWebsocket()
 	}
 

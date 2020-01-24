@@ -1,3 +1,5 @@
+//PORTA 19000
+
 import {createAppContainer} from 'react-navigation'
 import {createStackNavigator} from 'react-navigation-stack'
 
@@ -9,13 +11,13 @@ const Routes = createAppContainer(
 		Main:{
 			screen:Main,
 			navigationOptions:{
-				title:'heyDev'
+				title:'DevRadar'
 			},
 		},
 		Profile:{
 			screen:Profile,
 			navigationOptions:{
-				title:'GitHub'
+				title:'Perfil no GitHub'
 			},
 		},
 	},{

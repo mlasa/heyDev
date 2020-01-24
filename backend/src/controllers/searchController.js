@@ -18,7 +18,6 @@ const index  = async (req,res)=>{
 			 }
 		 }
 	 })
-	 console.log(devs)
 	return res.json({devs})
 }
 

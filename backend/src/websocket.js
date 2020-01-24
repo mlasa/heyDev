@@ -6,7 +6,7 @@ let io
 const connections = [] // seria melhor guardar no banco
 
 exports.setupWebsocket = (server) =>{
-	console.log('ok')
+	console.log('socket io')
 	io = socketio(server)
 
 	io.on('connection',socket=>{
