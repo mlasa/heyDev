@@ -17,7 +17,6 @@ function App() {
       async function loadDevs(){//nao posso por async na frente do useEffect entao crio uma funcao dentro dele
         const response = await api.get('/devs')
         setDevs(response.data)
-        console.log(response.data)
       }
       loadDevs()
     },[])
