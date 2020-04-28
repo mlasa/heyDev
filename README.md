@@ -63,7 +63,7 @@ Após isso a página vai ser aberta automaticamente no seu navegador
 
 <strong>Mobile</strong> 
 
-- Coloque o endereço do seu servidor dentro da pasta mobile no arquivo src/services/api.js
+- Coloque o endereço do seu servidor backend dentro da pasta mobile no arquivo src/services/api.js
 - Execute os comandos:
      ```bash
      yarn global add install expo-cli
