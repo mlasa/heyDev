@@ -72,5 +72,6 @@ Após isso a página vai ser aberta automaticamente no seu navegador
      yarn start
    ```
 
+Automaticamente seu navegador a página localhost:19000. Você pode conectar seu emulador ou então testar no aplicativo Expo, é só escanerar o QR Code com o Expo.
 
 </p>
