@@ -50,9 +50,9 @@ E no front-end:
       yarn dev
     ```
 
-<strong>Front-End</strong>
+<strong>Web</strong>
 
-Para instalar as dependências e iniciar o Front-End:
+Para instalar as dependências e iniciar o Front-End(web):
    - Volte até a pasta mais externa do projeto e execute:
         ```bash
         cd web
@@ -74,4 +74,7 @@ Após isso a página vai ser aberta automaticamente no seu navegador
 
 Automaticamente seu navegador a página localhost:19000. Você pode conectar seu emulador ou então testar no aplicativo Expo, é só escanerar o QR Code com o Expo.
 
+
+Para que você consiga testar tanto a parte web(Front-End), como a Mobile, você precisa estar com o servidor Back-End rodando.
+Se quiser testar só o mobile, não precisa rodar o web, e vice versa.
 </p>
