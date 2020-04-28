@@ -13,13 +13,14 @@ você deseja pode buscar por desenvolvedores de uma tecnologia especfica.
 Cada desenvolvedor aparece como um ponto no mapa, e possui um link para seu repositório de projetos e também suas tecnologias favoritas.
 </p>
 
-### 🖥 Projeto
+## 🖥 Projeto
 <p>
 É um projeto web e mobile, a parte  web foi pensada para que os desenvolvedores pudessem se cadastrar. E a parte mobile é onde
 os desenvolvedores podem procurar uns pelos outros.
 </p>
 
-### 🔧 Tecnologias
+## 🔧 Tecnologias
+
 <p>
 O projeto foi divido em back-end e front-end porque foi usado o estilo aquitetural REST.
 
@@ -29,4 +30,47 @@ Então no back-end foi usado:
 E no front-end:
 - React
 - React Native
+</p>
+
+## 🖱 Instalação e Execução
+<p>
+ <strong>Banco de Dados</strong>
+  
+  - Configure o MongoDB
+  - Altere a string de conexão no arquivo .env, dentro da pasta backend, com com seu usuário e senha do banco de dados.
+
+<strong>Back-End</strong>
+
+  Para instalar as dependências e executar o servidor no modo de desenvolvimento:
+  - Clone o projeto no seu computador
+  - Vá até a pasta mais externa do projeto e execute:
+      ```bash
+      cd backend
+      yarn install
+      yarn dev
+    ```
+
+<strong>Front-End</strong>
+
+Para instalar as dependências e iniciar o Front-End:
+   - Volte até a pasta mais externa do projeto e execute:
+        ```bash
+        cd web
+        yarn install
+        yarn start
+      ```
+Após isso a página vai ser aberta automaticamente no seu navegador
+
+<strong>Mobile</strong> 
+
+- Coloque o endereço do seu servidor dentro da pasta mobile no arquivo src/services/api.js
+- Execute os comandos:
+     ```bash
+     yarn global add install expo-cli
+     cd mobile
+     yarn install
+     yarn start
+   ```
+
+
 </p>
