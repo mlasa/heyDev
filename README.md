@@ -22,7 +22,7 @@ os desenvolvedores podem procurar uns pelos outros.
 ## 🔧 Tecnologias
 
 <p>
-O projeto foi divido em back-end e front-end porque foi usado o estilo aquitetural REST.
+O projeto foi divido em back-end e front-end porque foi usado o estilo arquitetural REST.
 
 Então no back-end foi usado:
 - Node.js
@@ -30,6 +30,11 @@ Então no back-end foi usado:
 E no front-end:
 - React
 - React Native
+
+E no banco de dados:
+- Banco de dados MongoDB
+- NoSQL
+
 </p>
 
 ## 🖱 Instalação e Execução
